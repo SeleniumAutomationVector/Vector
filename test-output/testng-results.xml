@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[open test]]>
+    </line>
+    <line>
+      <![CDATA[Run test A]]>
+    </line>
+    <line>
+      <![CDATA[close test:testAstatus1]]>
+    </line>
+    <line>
+      <![CDATA[open test]]>
+    </line>
+    <line>
+      <![CDATA[Run test B]]>
+    </line>
+    <line>
+      <![CDATA[close test:testBstatus2]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="84" started-at="2017-12-30T10:14:12Z" finished-at="2017-12-30T10:14:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="84" started-at="2017-12-30T10:14:12Z" finished-at="2017-12-30T10:14:12Z">
+      <class name="script.DemogetStatus">
+        <test-method status="PASS" signature="openTest()[pri:0, instance:script.DemogetStatus@34c4973]" name="openTest" is-config="true" duration-ms="16" started-at="2017-12-30T15:44:12Z" finished-at="2017-12-30T15:44:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[open test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openTest -->
+        <test-method status="PASS" signature="testA()[pri:0, instance:script.DemogetStatus@34c4973]" name="testA" duration-ms="6" started-at="2017-12-30T15:44:12Z" finished-at="2017-12-30T15:44:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Run test A]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="FAIL" signature="testB()[pri:0, instance:script.DemogetStatus@34c4973]" name="testB" duration-ms="0" started-at="2017-12-30T15:44:12Z" finished-at="2017-12-30T15:44:12Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: nullat org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.fail(Assert.java:103)at script.DemogetStatus.testB(DemogetStatus.java:28)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Run test B]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method status="PASS" signature="openTest()[pri:0, instance:script.DemogetStatus@34c4973]" name="openTest" is-config="true" duration-ms="0" started-at="2017-12-30T15:44:12Z" finished-at="2017-12-30T15:44:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[open test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openTest -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.DemogetStatus@34c4973]" name="closeApp" is-config="true" duration-ms="0" started-at="2017-12-30T15:44:12Z" finished-at="2017-12-30T15:44:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=SUCCESS method=DemogetStatus.testA()[pri:0, instance:script.DemogetStatus@34c4973] output=Run test A]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[close test:testAstatus1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.DemogetStatus@34c4973]" name="closeApp" is-config="true" duration-ms="0" started-at="2017-12-30T15:44:12Z" finished-at="2017-12-30T15:44:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testB status=FAILURE method=DemogetStatus.testB()[pri:0, instance:script.DemogetStatus@34c4973] output=Run test B]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[close test:testBstatus2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.DemogetStatus -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
